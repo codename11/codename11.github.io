@@ -45,7 +45,7 @@ $('a.smooth-scroll')
 let map, infoWindow, center;
 function initMap(){
 
-  center = {lat: -34.397, lng: 150.644};
+  center = {lat: 44.6659, lng: 20.9335};
   map = new google.maps.Map(document.getElementById("mapa"), {
     center: center,
     zoom: 13
@@ -54,7 +54,8 @@ function initMap(){
   infoWindow = new google.maps.InfoWindow;
 
   // Try HTML5 geolocation.
-  if(navigator.geolocation){
+  //Uncomment if you want to work.
+  /*if(navigator.geolocation){
 
     navigator.geolocation.getCurrentPosition((position) => {
       let pos = {
@@ -76,7 +77,7 @@ function initMap(){
     // Browser doesn't support Geolocation
     handleLocationError(false, infoWindow, map.getCenter());
     
-  }
+  }*/
 
 }
   

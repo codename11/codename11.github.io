@@ -7273,3 +7273,21 @@ a.credit {
 .section {
   padding-bottom: 0;
 }
+
+.respace{
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.rerow{
+  flex-direction:column;
+}
+
+.sliderItem{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cardAlign{
+  text-align: center;
+}
