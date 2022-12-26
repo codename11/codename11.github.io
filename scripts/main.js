@@ -6,6 +6,23 @@ $(document).ready(function() {
     // uncomment below for on-scroll animations to played only once
     // once: true  
   }); // initialize animate on scroll library
+
+  var dob = new Date("11/20/1982");  
+  //calculate month difference from current date in time  
+  var month_diff = Date.now() - dob.getTime();  
+    
+  //convert the calculated difference in date format  
+  var age_dt = new Date(month_diff);   
+    
+  //extract year from date      
+  var year = age_dt.getUTCFullYear();  
+    
+  //now calculate the age of the user  
+  var age = Math.abs(year - 1970);  
+    
+  //display the calculated age  
+  document.getElementById("myAge").innerHTML = age;
+
 });
 
 // Smooth scroll for links with hashes
